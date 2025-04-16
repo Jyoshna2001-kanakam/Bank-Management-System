@@ -8,3 +8,7 @@ The Bank Management System is a web-based application built using Django that si
   <li>Authentication: Django’s built-in User model</li>
   <li>Security: PIN validation, hashed passwords, session control</li>
 </ul>
+
+
+<h2>Home page:</h2>
+<img src='https://github.com/Jyoshna2001-kanakam/Bank-Management-System/blob/main/Screenshot%20(43).png?raw=true' alt='Home page' height='500px' width='800px'>
