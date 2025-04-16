@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+     #wbtn{
+          width: 180px;
+     }
+</style>
+<h2>Withdraw Amount</h2>
+<form action="" method="POST">
+     {% csrf_token %}
+     
+     <input type="number" name="acc" id="" placeholder="Enter Account number"> <br><br>
+     
+     <input type="password" name="pin" id="" maxlength="4" placeholder="Enter pin"> <br><br>
+     
+     <input type="number" name="amt" id="" placeholder="Enter Amount"> <br><br>
+     <button id="wbtn" type="submit">Withdraw</button>
+</form>
+<p style="color: red;">{{msg}}</p>
+{% endblock %}

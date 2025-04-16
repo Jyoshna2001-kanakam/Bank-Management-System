@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Amount Transfer</h2>
+<form action="" method="POST">
+     {% csrf_token %}
+     <input type="number" name="f_acc" id="" placeholder="Enter from account number"> <br><br>
+     <input type="number" name="t_acc" id="" placeholder="Enter to account number">  <br><br>
+     <input type="password" name="pin" id="" maxlength="4" placeholder="Enter pin"> <br><br>
+     <input type="number" name="amt" placeholder="Enter amount" id=""> <br><br>
+     <button type="submit">Submit</button>
+</form>
+<p style="color: red;">{{msg}}</p>
+
+{% endblock content %}

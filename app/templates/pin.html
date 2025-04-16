@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+#botp{
+     width: 250px;
+}
+</style>
+<h2>Pin Generation</h2>
+<form action="" method="POST">
+{% csrf_token %}
+
+<input type="number" name="acc" id="" placeholder="Enter Account number"> <br><br>
+<button id="botp" type="submit">GENERATE OTP</button>
+
+</form>
+
+{% endblock content %}

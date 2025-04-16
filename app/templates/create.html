@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          form{
+               margin-left: 30%;
+               margin-top: 5%;
+          }
+          input,textarea{
+               height: 40px;
+               width: 400px;
+               border: 2px solid;
+               border-radius: 10px;
+          }
+          button{
+               background-color: black;
+               color: white;
+               border-radius: 10px;
+               height: 40px;
+               width: 100px;
+               font-size: 20px;
+               padding: 8px;
+               margin-left: 10%;
+          }
+     </style>
+</head>
+<body>
+     {% extends 'base.html' %}
+     {% block content %}
+     <h2>Create Account</h2>
+     <form action="" method="POST">
+          {% csrf_token %}
+               
+               <input type="text" name="name" id="" placeholder="Enter your name"> <br><br>
+               
+               <input type="date" name="dob" id="" placeholder="Enter date of birth"> <br><br>
+            
+               <input type="number" name="aadhar" id="" placeholder="Enter aadhar number"> <br><br>
+               
+               <input type="email" name="email" id="" placeholder="Enter Email"> <br><br>
+               
+               <input type="number" name="mobile" id="" placeholder="Enter Mobile number"> <br><br>
+               
+               <textarea name="address" id="" placeholder="Enter Address"></textarea> <br><br>
+               <button type="submit">Submit</button>
+     </form>
+     {% endblock content %}
+
+</body>
+</html>

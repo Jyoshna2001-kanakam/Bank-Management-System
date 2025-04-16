@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="{% static 'style/nav.css' %}">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Bungee+Tint&family
+=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Londrina+Sketch&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" 
+rel="stylesheet">
+<style>
+     form{
+          margin-left: 30%;
+          margin-right: 35%;
+          padding: 30px;
+          border: 2px solid;
+          border-radius: 15px;
+          background-image: linear-gradient(yellow,orange,red);
+     }
+     input,textarea{
+          height: 40px;
+          width: 400px;
+          border: 2px solid;
+          border-radius: 10px;
+     }
+     button{
+          background-color: black;
+          color: white;
+          border-radius: 10px;
+          height: 40px;
+          width: 100px;
+          font-size: 20px;
+          padding: 8px;
+          margin-left: 10%;
+     }
+     h2{
+          text-align: center;
+          font-size: 40px;
+          text-shadow: 3px 3px 5px grey;
+          /* margin-top: 5%; */
+     }
+</style>
+
+</head>
+<body>
+     {% include 'nav.html' %}
+
+     {% block content %}
+
+     {% endblock content %}
+</body>
+</html

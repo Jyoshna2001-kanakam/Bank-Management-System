@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<style>
+     #bbal{
+          width: 250px;
+     }
+</style>
+<h2>Check Balance</h2>
+
+{% if var %}
+<h1>The balance is : {{bal}}</h1>
+{% else %}
+
+<form action="" method="POST">
+     {% csrf_token %}
+     
+     <input type="number" name="acc" id="" placeholder="Enter Account number"> <br><br>
+
+     <input type="password" name="pin" maxlength="4" id="" placeholder="Enter pin"> <br><br>
+     <button id="bbal" type="submit">Check balance</button>
+</form>
+
+{% endif %}
+<p style="color: red;">{{msg}}</p>
+{% endblock content%}
